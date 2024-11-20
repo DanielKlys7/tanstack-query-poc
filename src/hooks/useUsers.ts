@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
-import { User } from '../services/user';
+import { User } from '../services/User';
 import { TransformedUser, UserResponse } from '../types/User';
 
 const transformUser = (user: UserResponse): TransformedUser => ({
   index: user.id,
-  nickname: user.name.toUpperCase()
+  nickname: user.name.toUpperCase(),
 });
 
 export const useUsers = () => {

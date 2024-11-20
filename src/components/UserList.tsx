@@ -9,7 +9,7 @@ export const UserList = () => {
     <div className="p-4">
       <h2 className="text-xl font-bold mb-4">Users (Transformed)</h2>
       <div className="grid gap-4">
-        {transformedUsers?.map(user => (
+        {transformedUsers?.map((user) => (
           <div key={user.index} className="p-4 bg-gray-100 rounded">
             <p>Index: {user.index}</p>
             <p>Nickname: {user.nickname}</p>
